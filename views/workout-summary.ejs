@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Workout Summary</h1>
+    <ul>
+        <%for (let i = 0; i<plan.length; i++) { %>
+            <p>Workout Type: <%= plan[i].Workout%></p>
+            <p>Duration: <%= plan[i].Duration %></p>
+            <p>Intensity: <%= plan[i].Intensity %></p>
+            <p>Date: <%= plan[i].Date %></p>
+            <p>Notes: <%= plan[i].Notes %></p>
+            <br><br>
+       <% } %>
+
+    </ul>    
+</body>
+</html>

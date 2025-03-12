@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+
+    <title>Fitness Tracker</title>
+</head>
+<body>
+    <form action="workout-summary" name = "workout-summary" method="post">
+        <h1>Personal Fitness Tracker</h1>
+
+    <div class = "section">
+    <label>WorkOut Type:</label>
+    <select name="type" id="type">
+        <option value="default">Please Select a type of WorkOut</option>
+        <option value="running">Running</option>
+        <option value="lifting">Weightlifting</option>
+        <option value="yoga">Yoga</option>
+        <option value="cycling">Cycling</option>
+      </select>
+    </div>
+    <br>
+    <div class = "section">
+      <label>Duration (minutes):</label>
+      <input type="text" id="duration" name="duration">
+    </div>
+    <br>
+    <div id = "intense">
+        <input type="radio" id="low" name="intensity" value="low">
+        <label for="low">Low</label><br>
+        <input type="radio" id="medium" name="intensity" value="medium">
+        <label for="medium">Medium</label><br>
+        <input type="radio" id="high" name="intensity" value="high">
+        <label for="high">High</label>        
+    </div>
+    <br>
+        <div class = "section">
+        <label for="time">Date:</label>
+        <input type="date" id="time" name="time">
+        </div>
+
+    <div class = "section">
+    <label for="time">Notes:</label>
+    <input type="text" id="notes" name="notes">
+    <button type="submit">Log Workout</button>
+    </div>
+    
+    </form>
+</body>
+</html>
