@@ -55,4 +55,3 @@ app.post('/workout-summary', async (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`);
 });
-https://github.com/ShawnN003/Final-Practice.git
